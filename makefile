@@ -1,4 +1,12 @@
 TARGET = gameOfLife
 
+CC = gcc
+CFLAGS = -Wall -lraylib
+
 all:
-	gcc main.c -o $(TARGET) -lraylib -Wall
+	$(CC) main.c -o $(TARGET) $(CFLAGS)
+
+.PHONY: clean
+
+clean:
+	rm -f $(TARGET)
