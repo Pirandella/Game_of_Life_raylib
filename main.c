@@ -110,7 +110,7 @@ int main(void){
             }
         }
 
-        DrawTextEx(barFont, FormatText("State: %4s, Speed: %2d Gen: %4d | LMB - place cell, RMB - remove cell, SPACE - Run/Stop, C - Clear, R - Gen Rand, [/] - Game Speed -/+, ESC - Exit",
+        DrawTextEx(barFont, FormatText("State: %4s, Speed: %2d, Gen: %4d | LMB - place cell, RMB - remove cell, SPACE - Run/Stop, C - Clear, R - Gen Rand, [/] - Game Speed -/+, ESC - Exit",
                             ((gameState) ? "Run" : "Stop"), gameSpeed, genNumber), barTextPos, 13, 1, BLACK);
 
         EndDrawing();
